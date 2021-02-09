@@ -5,6 +5,7 @@ if (home) {
 
   viewCountry.addEventListener('click', function () {
     const height = viewCountryBlock.querySelector('.cards_container').clientHeight
+    alert(height)
     if (this.classList.contains('active')) {
       this.classList.remove('active')
       viewCountryBlock.style.maxHeight = `0`
