@@ -29,6 +29,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-x: hidden;
 }
 
 
@@ -157,7 +158,7 @@ main{
 }
 
 .select_country__countries{
-  margin-top: 20px;
+  margin-top: 10px;
   transition: all 0.8s ease;
   height: auto;
   width: 100%;
@@ -168,19 +169,18 @@ main{
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: flex-start;
-  row-gap: 20px;
-  column-gap: 2.85%;
-  width: 100%;
+  width: calc(100% + 40px);
   height: fit-content;
+  margin-left: -20px;
 }
 
 .select_country__country_card{
-  width: 10%;
+  width: 12.5%;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 15px;
+  padding: 10px 20px;
 }
 
 .select_country__country_card img{
@@ -188,6 +188,7 @@ main{
   opacity: 0.7;
   filter: grayscale(1);
   transition: 0.5s all ease;
+  margin-bottom: 15px;
 }
 
 .select_country__country_card:hover img{
@@ -255,7 +256,6 @@ main{
   justify-content: center;
   align-items: flex-start;
   flex-wrap: wrap;
-  row-gap: 55px;
 }
 
 .people_trust__card{
@@ -263,8 +263,15 @@ main{
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  row-gap: 25px;
   width: 32%;
+  margin-bottom: 55px;
+}
+.people_trust__card.four_element{
+  width: 24%;
+}
+
+.people_trust__card__logo{
+  margin-bottom: 25px;
 }
 
 .people_trust__card__logo span{
@@ -296,6 +303,7 @@ main{
 
 .people_trust__card.with_line{
   border-right: 2px solid var(--button-grey);
+  position: relative;
 }
 
 
@@ -324,6 +332,11 @@ main{
 .about_vet__banner img{
   width: 100%;
   height: auto;
+}
+
+.when_use__banner img:last-child,
+.about_vet__banner img:last-child{
+  display: none;
 }
 
 .when_use .container,
@@ -388,9 +401,7 @@ main{
   align-items: flex-start;
   flex-direction: column;
   row-gap: 15px;
-  padding-top: 45px;
-  padding-bottom: 45px;
-  padding-left: 10%;
+  padding: 45px 5% 45px 10%;
   box-sizing: border-box;
   transform: scale(1.1);
   position: relative;
@@ -399,6 +410,7 @@ main{
 
 .advantages__line:nth-child(even) .advantages__line__tab{
   clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
+  padding-right: 0;
 }
 
 .advantages__line__tab p{
@@ -428,6 +440,10 @@ main{
   height: 90%;
   background-position: top right;
   background-size: cover;
+}
+
+.advantages__line__image:last-child{
+  display: none;
 }
 
 .advantages__line:nth-child(even) .advantages__line__image{
@@ -555,6 +571,7 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .copyright_section .container > div{
@@ -564,12 +581,13 @@ footer{
 
 .copyright_section__logo_block{
   justify-content: flex-start;
-  align-content: flex-end;
-  column-gap: 25px;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .copyright_section__logo_block .logo{
   font-size: 25px;
+  margin-right: 25px;
 }
 
 .copyright_section__logo_block p:last-child{
