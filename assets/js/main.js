@@ -12,7 +12,7 @@ if (home) {
     } else {
       this.classList.add('active')
       this.innerHTML = 'Hide'
-      viewCountryBlock.style.maxHeight = `${height}px`
+      viewCountryBlock.style.maxHeight = height + 'px'
     }
   })
 }
