@@ -72,11 +72,26 @@ header:after {
   width: 100%;
   padding-top: 55px;
   padding-bottom: 90px;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
 }
 
 .landing .logo_block{
   padding-top: 90px;
   padding-bottom: 110px;
+}
+
+.logo_block p:last-child{
+  font-family: var(--futura);
+  font-size: 62px;
+  font-weight: 400;
+  display: flex;
+  align-items: flex-start;
+  line-height: 1;
+  color: var(--white-color);
+  margin-left: 15px;
+  text-transform: uppercase;
 }
 
 .logo_block p:first-child {
@@ -117,6 +132,10 @@ header:after {
   width: 100%;
 }
 
+.landing_banner__img_cal_cat img{
+  width: 95%;
+}
+
 .landing_banner__title{
   padding-top: 3%;
 }
@@ -131,9 +150,19 @@ header:after {
   flex-direction: column;
   align-items: flex-end;
   line-height: 0.9;
+  text-align: right;
+}
+
+.landing_banner__title__cystaid h1{
+  font-size: 90px;
 }
 
 .landing_banner__title .silver{
+  font-size: 90px;
+  color: var(--title-grey);
+}
+
+.landing_banner__title .violet span{
   font-size: 90px;
   color: var(--title-grey);
 }

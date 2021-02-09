@@ -26,6 +26,8 @@
     font-size: 92px;
   }
 
+  .landing_banner__title__cystaid h1,
+  .landing_banner__title .violet span,
   .landing_banner__title .silver {
     font-size: 68px;
   }
@@ -40,6 +42,8 @@
     font-size: 74px;
   }
 
+  .landing_banner__title__cystaid h1,
+  .landing_banner__title .violet span,
   .landing_banner__title .silver {
     font-size: 50px;
   }
@@ -123,13 +127,18 @@
     padding-top: 55%;
   }
 
+  .landing_banner__img_cal_cat {
+    width: 90%;
+    padding-top: 60%;
+  }
+
   .landing_banner__title {
     margin-left: auto;
     margin-right: 10%;
   }
 
   .landing:after {
-    top: 75%;
+    top: 70%;
   }
 
   .landing .logo_block {
@@ -157,18 +166,32 @@
   }
 }
 
+@media (max-width: 620px) {
+  .logo_block p:last-child {
+      font-size: 48px;
+  }
+}
+
 @media (max-width: 540px) {
 
-  .landing_banner__title h1{
+  .landing_banner__title h1 {
     font-size: 56px;
   }
-  .landing_banner__title .silver{
+
+  .landing_banner__title__cystaid h1,
+  .landing_banner__title .violet span,
+  .landing_banner__title .silver {
     font-size: 36px;
   }
 
   .landing_banner__img {
     width: 100%;
     padding-top: 50%;
+  }
+
+  .landing_banner__img_cal_cat {
+    width: 100%;
+    padding-top: 60%;
   }
 
   .call_to_action__socials {
@@ -281,11 +304,11 @@
     flex-direction: column-reverse;
   }
 
-  .advantages__line__tab{
+  .advantages__line__tab {
     padding-left: 5%;
   }
 
-  .advantages__line:nth-child(even) .advantages__line__tab{
+  .advantages__line:nth-child(even) .advantages__line__tab {
     padding-right: 5%;
     padding-left: 7%;
   }
@@ -339,11 +362,13 @@
   .logo_block p:first-child {
     font-size: 42px;
   }
-  .advantages__line__tab:after{
+
+  .advantages__line__tab:after {
     width: 20%;
     right: -13%;
     transform: rotate(5deg);
   }
+
   .advantages__line:nth-child(even) .advantages__line__tab:after {
     right: 87%;
     transform: rotate(-5deg);
