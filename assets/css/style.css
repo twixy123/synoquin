@@ -354,8 +354,39 @@ main{
   background: var(--main-bg);
   font-family: var(--futura);
   font-size: 32px;
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 10% 100%);
   margin-bottom: 35px;
+  position: relative;
+  overflow: hidden;
+}
+
+.when_use__title:before,
+.about_vet__title:before{
+  content: '';
+  display: flex;
+  width: 10%;
+  height: 210%;
+  background: white;
+  position: absolute;
+  top: -50%;
+  left: -6%;
+  transform: rotate(
+    -38deg
+  );
+}
+
+.when_use__title:after,
+.about_vet__title:after{
+  content: '';
+  display: flex;
+  width: 10%;
+  height: 210%;
+  background: white;
+  position: absolute;
+  top: -50%;
+  right: -6%;
+  transform: rotate(
+    38deg
+  );
 }
 
 .when_use__description,
@@ -395,7 +426,6 @@ main{
 .advantages__line__tab{
   width: 45%;
   background: var(--main-bg);
-  clip-path: polygon(0 0, 100% 0, 90% 100%, 0% 100%);
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -407,9 +437,24 @@ main{
   z-index: 2;
 }
 
+.advantages__line__tab:after {
+  content: '';
+  display: flex;
+  width: 10%;
+  height: 150%;
+  background: #232f5d;
+  position: absolute;
+  right: -5%;
+  transform: rotate(11deg);
+}
+
 .advantages__line:nth-child(even) .advantages__line__tab{
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 10% 100%);
   padding-right: 0;
+}
+
+.advantages__line:nth-child(even) .advantages__line__tab:after{
+  right: 95%;
+  transform: rotate(-11deg);
 }
 
 .advantages__line__tab p{
