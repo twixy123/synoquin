@@ -281,6 +281,10 @@
     flex-direction: column-reverse;
   }
 
+  .advantages__line__tab{
+    padding-left: 5%;
+  }
+
   .advantages__line:nth-child(even) .advantages__line__tab{
     padding-right: 5%;
     padding-left: 7%;
@@ -334,5 +338,14 @@
 @media (max-width: 360px) {
   .logo_block p:first-child {
     font-size: 42px;
+  }
+  .advantages__line__tab:after{
+    width: 20%;
+    right: -13%;
+    transform: rotate(5deg);
+  }
+  .advantages__line:nth-child(even) .advantages__line__tab:after {
+    right: 87%;
+    transform: rotate(-5deg);
   }
 }

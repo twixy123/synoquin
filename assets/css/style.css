@@ -424,7 +424,7 @@ main{
 }
 
 .advantages__line__tab{
-  width: 45%;
+  width: 40%;
   background: var(--main-bg);
   display: flex;
   justify-content: center;
@@ -440,12 +440,12 @@ main{
 .advantages__line__tab:after {
   content: '';
   display: flex;
-  width: 10%;
+  width: 23%;
   height: 150%;
-  background: #232f5d;
+  background: var(--main-bg);
   position: absolute;
-  right: -5%;
-  transform: rotate(11deg);
+  right: -11%;
+  transform: rotate(10deg);
 }
 
 .advantages__line:nth-child(even) .advantages__line__tab{
@@ -453,8 +453,8 @@ main{
 }
 
 .advantages__line:nth-child(even) .advantages__line__tab:after{
-  right: 95%;
-  transform: rotate(-11deg);
+  right: 89%;
+  transform: rotate(-10deg);
 }
 
 .advantages__line__tab p{
