@@ -1,0 +1,22 @@
+@media (max-width: 1920px) {
+
+  header:after {
+    transform: rotate(-3deg);
+  }
+
+  .logo_block {
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 60px;
+  }
+
+  .landing .logo_block{
+    padding-top: 90px;
+    padding-bottom: 110px;
+  }
+
+  .landing:after{
+    top: 65%;
+    left: 0;
+  }
+}
