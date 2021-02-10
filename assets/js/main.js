@@ -1,4 +1,5 @@
 const home = document.getElementById('home')
+home.style.background = 'red'
 if (home) {
   const viewCountry = document.querySelector('.select_country__view_all'),
     viewCountryBlock = document.querySelector('.select_country__hidden_block')
