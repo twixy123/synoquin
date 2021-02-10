@@ -1,5 +1,3 @@
-'use strict'
-
 const home = document.getElementById('home')
 if (home) {
   const viewCountry = document.querySelector('.select_country__view_all'),
@@ -7,7 +5,6 @@ if (home) {
 
   viewCountry.addEventListener('click', function () {
     const height = viewCountryBlock.querySelector('.cards_container').clientHeight
-    alert(height)
     if (this.classList.contains('active')) {
       this.classList.remove('active')
       viewCountryBlock.style.maxHeight = `0`
